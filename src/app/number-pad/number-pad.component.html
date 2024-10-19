@@ -1,0 +1,19 @@
+<div class="number-pad">
+  <div class="number-buttons">
+    <button mat-raised-button *ngFor="let number of numbers; let i = index" 
+            (click)="onNumberClick(number)" 
+            [style.background-color]="buttonColors[i]">
+      {{number}}
+    </button>
+  </div>
+  <div class="action-buttons">
+    <button mat-raised-button (click)="onNumberClick(0)" 
+            [style.background-color]="buttonColors[9]">
+      0
+    </button>
+    <button mat-raised-button (click)="onClear()" 
+            [style.background-color]="clearButtonColor">
+      Clear
+    </button>
+  </div>
+</div>

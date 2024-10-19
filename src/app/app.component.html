@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>POS Web Application</span>
+</mat-toolbar>
+<div class="content">
+  <app-product-list (productSelected)="onProductSelected($event)"></app-product-list>
+  <app-display-section [selectedProducts]="selectedProducts" [total]="total"></app-display-section>
+  <app-number-pad (numberEntered)="onNumberEntered($event)" (clearRequested)="onClear()"></app-number-pad>
+</div>

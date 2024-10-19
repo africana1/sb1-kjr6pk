@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  height: calc(100vh - 64px);
+  padding: 16px;
+  gap: 16px;
+}
+
+app-product-list {
+  flex: 2;
+}
+
+app-display-section, app-number-pad {
+  flex: 1;
+}
+
+app-product-list, app-display-section, app-number-pad {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}

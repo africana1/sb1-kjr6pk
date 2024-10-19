@@ -1,0 +1,11 @@
+<div class="product-list-container">
+  <mat-form-field class="search-field">
+    <input matInput placeholder="Search products" [(ngModel)]="searchTerm" (ngModelChange)="filterProducts()">
+  </mat-form-field>
+  <div class="product-grid">
+    <button mat-raised-button *ngFor="let product of filteredProducts" (click)="selectProduct(product)">
+      <div>{{product.name}}</div>
+      <div>{{product.price | currency}}</div>
+    </button>
+  </div>
+</div>

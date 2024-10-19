@@ -1,0 +1,17 @@
+.display-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-list {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.total {
+  padding: 20px;
+  font-size: 24px;
+  text-align: right;
+  background-color: #f0f0f0;
+}
